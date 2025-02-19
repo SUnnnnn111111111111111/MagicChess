@@ -34,7 +34,6 @@ Transform:
   - {fileID: 8095392432583430807}
   - {fileID: 358304240984645420}
   - {fileID: 4893533707497528679}
-  - {fileID: 475767160583217366}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3954298788306583747
@@ -266,6 +265,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     _PersistentCalls:
+    - _Target: {fileID: 1790951207379546114}
+      _MemberName: get_GameObject
+      _PersistentArguments: []
+    - _Target: {fileID: 4616551392903559540}
+      _MemberName: SendMessage
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: Perform
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: TurnOffTheTileOfNeighbours
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
     - _Target: {fileID: 11400000, guid: d09fee74b3ccc2e408407e8db8755a2f, type: 2}
       _MemberName: get_Vector3
       _PersistentArguments: []
@@ -273,9 +303,35 @@ MonoBehaviour:
       _MemberName: LaunchTweener
       _PersistentArguments:
       - _Type: 15
-        _Int: 0
+        _Int: 2
         _String: 
         _X: 7
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 11400000, guid: 9b4000d8398d7484f994fd325404e7c8, type: 2}
+      _MemberName: get_GameObject
+      _PersistentArguments: []
+    - _Target: {fileID: 1790951207379546114}
+      _MemberName: set_GameObject
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 4
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 3798176806033418908}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
         _Y: 0
         _Z: 0
         _W: 0
@@ -473,7 +529,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7423545025629109176}
-  m_Father: {fileID: 6650791434395383032}
+  m_Father: {fileID: 8095392432583430807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9034742626759724365
 GameObject:
@@ -552,7 +608,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 475767160583217366}
   m_Father: {fileID: 6650791434395383032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &9166364630969903814
@@ -627,6 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c590c49a11eaa24c8c90593d746ff42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 1
   WhenClickOnAnObject:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
@@ -692,7 +750,7 @@ MonoBehaviour:
         _Object: {fileID: 0}
       - _Type: 2
         _Int: 0
-        _String: HighlightTheTileOfNeighbours
+        _String: TurnOnTheTileOfNeighbours
         _X: 0
         _Y: 0
         _Z: 0
