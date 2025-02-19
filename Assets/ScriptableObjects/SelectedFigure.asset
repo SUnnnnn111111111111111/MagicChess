@@ -12,4 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f368f7a7192ad4080d644bf179799f, type: 3}
   m_Name: SelectedFigure
   m_EditorClassIdentifier: 
-  <GameObject>k__BackingField: {fileID: 0}
+  gameObject: {fileID: 0}
+  BeforeSet:
+    _PersistentCalls:
+    - _Target: {fileID: 11400000}
+      _MemberName: get_GameObject
+      _PersistentArguments: []
+  AfterSet:
+    _PersistentCalls:
+    - _Target: {fileID: 11400000}
+      _MemberName: set_GameObject
+      _PersistentArguments:
+      - _Type: 13
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}

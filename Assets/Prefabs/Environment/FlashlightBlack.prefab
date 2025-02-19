@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8061261971170205757}
   m_Layer: 0
-  m_Name: Flashlight
+  m_Name: FlashlightBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 1, g: 0.943535, b: 0.8254717, a: 1}
+  m_Color: {r: 1, g: 0.7287736, b: 0.6745283, a: 1}
   m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
