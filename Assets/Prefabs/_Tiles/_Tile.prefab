@@ -128,6 +128,17 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+    - _Target: {fileID: 2870922757068754571}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &1912596896494218016
 GameObject:
   m_ObjectHideFlags: 0
@@ -10194,7 +10205,7 @@ GameObject:
   - component: {fileID: 763486438725065789}
   - component: {fileID: 3229496737073271383}
   - component: {fileID: 8945714341957554088}
-  - component: {fileID: 8000366182253648079}
+  - component: {fileID: 4343227328633205751}
   - component: {fileID: 2504572832005674421}
   - component: {fileID: 2406506642071079942}
   m_Layer: 6
@@ -10295,7 +10306,7 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
---- !u!114 &8000366182253648079
+--- !u!114 &4343227328633205751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10387,7 +10398,7 @@ MonoBehaviour:
         _Y: 0
         _Z: 0
         _W: 0
-        _Object: {fileID: 1765281930367708}
+        _Object: {fileID: 5047669706225289238}
     - _Target: {fileID: 4394582298712778}
       _MemberName: get_localPosition
       _PersistentArguments: []
