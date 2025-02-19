@@ -14,9 +14,15 @@ public class GlobalGameObjectStorage : ScriptableObject
 
         set 
         {
-            BeforeSet.Invoke(gameObject);
+            if(gameObject == value) return;
+
+            if(gameObject) 
+                BeforeSet.Invoke(gameObject);
+
             gameObject = value;
-            AfterSet.Invoke(gameObject);
+
+            if(gameObject) 
+                AfterSet.Invoke(gameObject);
         }
     }
 }

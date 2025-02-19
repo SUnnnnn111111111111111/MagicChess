@@ -1,9 +1,9 @@
 using UnityEngine;
 using UltEvents;
 
-public class MessageSender : MonoBehaviour
+public static class MessageSender
 {
-    public void SendMessage(GameObject messageRecipient, string methodName, string inputParameter)
+    public static void SendMessage(GameObject messageRecipient, string methodName, string inputParameter)
     {
         messageRecipient.SendMessage(methodName, inputParameter);
     }
