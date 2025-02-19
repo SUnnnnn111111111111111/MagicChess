@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using DG.Tweening;
 
-public class TweenerOfJump : MonoBehaviour
+public class JumpTwinner : MonoBehaviour
 {
     [SerializeField] private Transform targetTransform;
     [SerializeField] private Ease curve;
@@ -12,9 +12,9 @@ public class TweenerOfJump : MonoBehaviour
 
 
 
-    public void LaunchTweener(Vector3 finalPposition)
+    public void LaunchTweener(Vector3 finalPosition)
     {
         targetTransform.DOKill(true);
-        targetTransform.DOJump(finalPposition, forceOfJump, countOfJump, durationOfJump).SetEase(curve);
+        targetTransform.DOJump(finalPosition, forceOfJump, countOfJump, durationOfJump).SetEase(curve);
     }
 }
