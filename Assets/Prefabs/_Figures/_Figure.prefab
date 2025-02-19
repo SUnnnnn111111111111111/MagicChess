@@ -178,9 +178,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 801701549237829634}
-  - component: {fileID: 6884187902737461421}
+  - component: {fileID: 4123868163825100870}
   m_Layer: 0
-  m_Name: TurnOffTheTileOfNeighbours
+  m_Name: TurnOffTheFigure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,10 +198,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6181538791279520352}
   m_Father: {fileID: 475767160583217366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6884187902737461421
+--- !u!114 &4123868163825100870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,38 +216,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     _PersistentCalls:
-    - _Target: {fileID: 1790951207379546114}
-      _MemberName: get_GameObject
-      _PersistentArguments: []
-    - _Target: {fileID: 0}
-      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null.SendMessage
+    - _Target: {fileID: 3798176806033418908}
+      _MemberName: SetActive
       _PersistentArguments:
-      - _Type: 15
+      - _Type: 1
         _Int: 0
-        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+        _String: 
         _X: 0
         _Y: 0
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: Perform
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: TurnOffTheTileOfNeighbours
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
+    - _Target: {fileID: 1493627665771059267}
+      _MemberName: LaunchEvent
+      _PersistentArguments: []
 --- !u!1 &2963792957767453803
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +410,84 @@ Transform:
   - {fileID: 8207283043427582563}
   m_Father: {fileID: 2367828275913025544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4096668367550660799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8352229570302384996}
+  - component: {fileID: 2774960563049784761}
+  m_Layer: 0
+  m_Name: SendMessageTurnOnToTileOfNeighbours
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8352229570302384996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096668367550660799}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1195653823315315424}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2774960563049784761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096668367550660799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b22011bb21bcc4da6ba477d4afbbbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    _PersistentCalls:
+    - _Target: {fileID: 1790951207379546114}
+      _MemberName: get_GameObject
+      _PersistentArguments: []
+    - _Target: {fileID: 0}
+      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null.SendMessage
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: Perform
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: TurnOnTheTileOfNeighbours
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &4421486916267579301
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +609,7 @@ Transform:
   - {fileID: 801701549237829634}
   m_Father: {fileID: 8095392432583430807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6849604082988055931
+--- !u!1 &6807256606602722442
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -556,37 +617,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1195653823315315424}
-  - component: {fileID: 8060368594976369837}
+  - component: {fileID: 6181538791279520352}
+  - component: {fileID: 1493627665771059267}
   m_Layer: 0
-  m_Name: TurnOnTheTileOfNeighbours
+  m_Name: SendMessageTurnOffToTileOfNeighbours
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1195653823315315424
+--- !u!4 &6181538791279520352
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6849604082988055931}
+  m_GameObject: {fileID: 6807256606602722442}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 475767160583217366}
+  m_Father: {fileID: 801701549237829634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8060368594976369837
+--- !u!114 &1493627665771059267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6849604082988055931}
+  m_GameObject: {fileID: 6807256606602722442}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95b22011bb21bcc4da6ba477d4afbbbe, type: 3}
@@ -620,12 +681,73 @@ MonoBehaviour:
         _Object: {fileID: 0}
       - _Type: 2
         _Int: 0
-        _String: TurnOnTheTileOfNeighbours
+        _String: TurnOffTheTileOfNeighbours
         _X: 0
         _Y: 0
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+--- !u!1 &6849604082988055931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195653823315315424}
+  - component: {fileID: 8082589794515815591}
+  m_Layer: 0
+  m_Name: TurnOnTheFigure
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1195653823315315424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6849604082988055931}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8352229570302384996}
+  m_Father: {fileID: 475767160583217366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8082589794515815591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6849604082988055931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b22011bb21bcc4da6ba477d4afbbbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    _PersistentCalls:
+    - _Target: {fileID: 3798176806033418908}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 2774960563049784761}
+      _MemberName: LaunchEvent
+      _PersistentArguments: []
 --- !u!1 &9034742626759724365
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,29 +915,3 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 1190088049932598607}
-    - _Target: {fileID: 3798176806033418908}
-      _MemberName: get_activeSelf
-      _PersistentArguments: []
-    - _Target: {fileID: 0}
-      _MemberName: UltEvents.Operators, Kybernetik.UltEvents, Version=3.0.5.0, Culture=neutral,
-        PublicKeyToken=null.Invert
-      _PersistentArguments:
-      - _Type: 15
-        _Int: 1
-        _String: 
-        _X: 1
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-    - _Target: {fileID: 3798176806033418908}
-      _MemberName: SetActive
-      _PersistentArguments:
-      - _Type: 15
-        _Int: 2
-        _String: 
-        _X: 1
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
