@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class LootAtCamera : MonoBehaviour
+public class LookAtCamera : MonoBehaviour
 {
-	private enum Mode
+    private enum Mode
     {
-        LootAt,
+        LookAt,
         LookAtInverted,
         CameraForward,
         CameraForwardInverted
@@ -14,20 +14,29 @@ public class LootAtCamera : MonoBehaviour
 
     private void LateUpdate()
     {
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null) return;
+
         switch (mode)
         {
-            case Mode.LootAt:
-                transform.LookAt(Camera.main.transform);
+            case Mode.LookAt:
+                transform.LookAt(mainCamera.transform);
                 break;
             case Mode.LookAtInverted:
-                Vector3 dirFromCamera = transform.position - Camera.main.transform.position;
+                Vector3 dirFromCamera = transform.position - mainCamera.transform.position;
                 transform.LookAt(transform.position + dirFromCamera);
                 break;
             case Mode.CameraForward:
-                transform.forward = Camera.main.transform.forward;
+                Vector3 flatForward = mainCamera.transform.forward;
+                flatForward.y = 0; // Убираем наклон по оси Y
+                flatForward.Normalize(); // Нормализуем вектор
+                transform.forward = flatForward;
                 break;
             case Mode.CameraForwardInverted:
-                transform.forward = -Camera.main.transform.forward;
+                Vector3 flatBackward = -mainCamera.transform.forward;
+                flatBackward.y = 0; // Убираем наклон по оси Y
+                flatBackward.Normalize(); // Нормализуем вектор
+                transform.forward = flatBackward;
                 break;
         }
     }
