@@ -9,4 +9,8 @@ public class EventLauncher : MonoBehaviour
     {
         Event.Invoke();
     }
+    public void LaunchEvent(float delay)
+    {
+        Invoke(nameof(LaunchEvent), delay);
+    }
 }

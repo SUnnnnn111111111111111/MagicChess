@@ -308,10 +308,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 6650791434395383032}
-  curve: 1
+  curve: 7
   durationOfJump: 1
   forceOfJump: 1
-  countOfJump: 2
+  countOfJump: 1
 --- !u!114 &8021534201270879282
 MonoBehaviour:
   m_ObjectHideFlags: 0

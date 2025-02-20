@@ -1295,6 +1295,17 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+    - _Target: {fileID: 886881698}
+      _MemberName: set_name
+      _PersistentArguments:
+      - _Type: 2
+        _Int: 0
+        _String: StateOfRotation - Turned
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
   WhenTurnedOff:
     _PersistentCalls:
     - _Target: {fileID: 1223069727}
@@ -1303,6 +1314,17 @@ MonoBehaviour:
       - _Type: 7
         _Int: 0
         _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 886881698}
+      _MemberName: set_name
+      _PersistentArguments:
+      - _Type: 2
+        _Int: 0
+        _String: StateOfRotation - NotTurned
         _X: 0
         _Y: 0
         _Z: 0
