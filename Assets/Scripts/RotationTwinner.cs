@@ -5,7 +5,7 @@ using DG.Tweening;
 public class RotationTwinner : MonoBehaviour
 {
     [SerializeField] private Transform targetTransform;
-    [SerializeField] private Ease curve;
+    [SerializeField] private AnimationCurve curve;
     [SerializeField] private float durationOfRotate = 1f;
 
 
