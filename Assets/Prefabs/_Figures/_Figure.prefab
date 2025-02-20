@@ -30,12 +30,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5692479353514241031}
   - {fileID: 2367828275913025544}
-  - {fileID: 1008009553583028196}
   - {fileID: 358304240984645420}
   - {fileID: 4893533707497528679}
-  - {fileID: 8095392432583430807}
+  - {fileID: 1008009553583028196}
   - {fileID: 94223501344471496}
+  - {fileID: 8095392432583430807}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3954298788306583747
@@ -201,8 +202,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1832624370431566042}
-  - {fileID: 2046475270268877273}
   - {fileID: 7144474240779753148}
+  - {fileID: 2046475270268877273}
   m_Father: {fileID: 6650791434395383032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2375830139197382937
@@ -287,7 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2367828275913025544}
   m_Layer: 0
-  m_Name: FigureModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,6 +309,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6650791434395383032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3509362240119481076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5692479353514241031}
+  - component: {fileID: 4063825935469026545}
+  m_Layer: 0
+  m_Name: WhiteTeamAffiliation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5692479353514241031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509362240119481076}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6650791434395383032}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4063825935469026545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509362240119481076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604d3fd11efdd624cafe941d83953332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <value>k__BackingField: 0
 --- !u!1 &3584761412661703794
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2046475270268877273}
+  - component: {fileID: 4627481386833397815}
   m_Layer: 0
   m_Name: DeathEffect
   m_TagString: Untagged
@@ -534,6 +581,31 @@ Transform:
   - {fileID: 5792806904347591671}
   m_Father: {fileID: 1008009553583028196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4627481386833397815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3921153813948946132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca27b51ff9960e54c9305d7d61021dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStart:
+    _PersistentCalls:
+    - _Target: {fileID: 4336084296723990799}
+      _MemberName: LaunchTweener
+      _PersistentArguments:
+      - _Type: 7
+        _Int: 0
+        _String: 
+        _X: 90
+        _Y: 0
+        _Z: 45
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &4096668367550660799
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +652,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     _PersistentCalls:
+    - _Target: {fileID: 4063825935469026545}
+      _MemberName: get_value
+      _PersistentArguments: []
+    - _Target: {fileID: 11400000, guid: 77f9f63399e796346953879f9bbd84ff, type: 2}
+      _MemberName: set_Bool
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: 
+        _X: 1
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
     - _Target: {fileID: 1977292158287479665}
       _MemberName: get_value
       _PersistentArguments: []
@@ -588,7 +674,7 @@ MonoBehaviour:
         PublicKeyToken=null.SendMessage
       _PersistentArguments:
       - _Type: 15
-        _Int: 0
+        _Int: 2
         _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         _X: 0
@@ -669,17 +755,6 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
-    - _Target: {fileID: 4336084296723990799}
-      _MemberName: LaunchTweener
-      _PersistentArguments:
-      - _Type: 7
-        _Int: 0
-        _String: 
-        _X: 90
-        _Y: 0
-        _Z: 45
-        _W: 0
-        _Object: {fileID: 0}
     - _Target: {fileID: 0}
       _MemberName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null.Destroy
@@ -713,7 +788,7 @@ GameObject:
   - component: {fileID: 3028118239889837793}
   - component: {fileID: 2266436968280547699}
   - component: {fileID: 4250080771010425993}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1178,7 +1253,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1555,13 +1630,13 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 2
     angle: 45
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 1, z: 0}
+    m_Position: {x: 0, y: 1.5, z: 0}
     m_Rotation: {x: -90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -1871,7 +1946,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 60
+        scalar: 30
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -5793,7 +5868,7 @@ GameObject:
   - component: {fileID: 7383554440189307103}
   - component: {fileID: 1731102848829731972}
   - component: {fileID: 6717234717901396234}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5938,7 +6013,7 @@ GameObject:
   - component: {fileID: 4388761623762887414}
   - component: {fileID: 5777062656402415231}
   - component: {fileID: 4901378216626830496}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: 'Image '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6397,8 +6472,8 @@ GameObject:
   - component: {fileID: 9166364630969903814}
   - component: {fileID: 7750316736179007619}
   - component: {fileID: 7783626854323309703}
-  m_Layer: 7
-  m_Name: FigureCollider
+  m_Layer: 0
+  m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

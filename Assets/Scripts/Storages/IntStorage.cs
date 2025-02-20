@@ -17,5 +17,4 @@ public class IntStorage : ValueStorage<int>
     {
         return value == number;
     }
-    
 }
