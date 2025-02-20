@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - Tile
-  - Figure
-  - 
+  - WhiteFigure
+  - BlackFigure
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: WorldSpaceUI
+    uniqueID: 2006157865
     locked: 0
   m_RenderingLayers:
   - Default

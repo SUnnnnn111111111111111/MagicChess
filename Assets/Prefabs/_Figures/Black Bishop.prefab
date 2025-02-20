@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5461567437481502638}
   - component: {fileID: 3941342924596588181}
   - component: {fileID: 7951850234563264090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3814208780105521994}
   - component: {fileID: 8830339513610690449}
   - component: {fileID: 6964063408106967632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 3170912387365524596}
   - component: {fileID: 227242374148644719}
   - component: {fileID: 2012090552604523471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 5863747481802574244}
   - component: {fileID: 8140572575935830885}
   - component: {fileID: 4646523120151746474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 7073907450577323570}
   - component: {fileID: 153029187900246544}
   - component: {fileID: 8039048722940624110}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 7849426974159555169}
   - component: {fileID: 7537362373818832501}
   - component: {fileID: 7496297811348691206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 8035005305200864541}
   - component: {fileID: 3993005168269046224}
   - component: {fileID: 1122162795482297719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,7 +613,7 @@ GameObject:
   - component: {fileID: 2012953228102570562}
   - component: {fileID: 2697493367919712294}
   - component: {fileID: 8849234746922325124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stone_Bishop_Element_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Black Bishop
       objectReference: {fileID: 0}
+    - target: {fileID: 1190088049932598607, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1527085605580523161, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Color.b
       value: 0.2688679
@@ -712,9 +716,57 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1992022856587249436, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2375830139197382937, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560220976669032492, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963792957767453803, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647241850874943729, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798176806033418908, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3919732862522517089, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Intensity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096668367550660799, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267654177998170104, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421486916267579301, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684689649986378304, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897089731290160447, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6546635772046503710, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6650791434395383032, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -755,6 +807,30 @@ PrefabInstance:
     - target: {fileID: 6650791434395383032, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807256606602722442, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849604082988055931, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601538642128554946, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909837607716775010, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9034742626759724365, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062896999122483629, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
