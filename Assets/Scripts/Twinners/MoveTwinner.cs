@@ -10,12 +10,18 @@ public class MoveTwinner : MonoBehaviour
     [SerializeField] private float durationOfMove = 1f;
     [SerializeField] private UltEvent OnEndOfTheMove;
 
-    public void LaunchTweener(Vector3 finalPosition)
+    public void LaunchTweenerInGlobalCoordinates(Vector3 finalPosition)
     {
         targetTransform.DOKill(true);
         targetTransform.DOLocalMove(finalPosition, durationOfMove)
             .SetEase(curve)
             .OnComplete(CompleteTheTweener); 
+    }
+
+    public void LaunchTweenerInLocalCoordinates(Vector3 localOffset)
+    {
+        Vector3 newLocalPosition = targetTransform.localPosition + localOffset;
+        targetTransform.DOLocalMove(newLocalPosition, durationOfMove);
     }
 
 

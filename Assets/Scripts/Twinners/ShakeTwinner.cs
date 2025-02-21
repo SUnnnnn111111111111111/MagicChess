@@ -24,15 +24,13 @@ public class ShakeTwinner : MonoBehaviour
     {
         targetTransform.DOKill(true);
 
-        // Тряска в мировых координатах
-        targetTransform.DOShakePosition(shakeDuration, shakeStrength, shakeVibrato, shakeRandomness)
-            .OnComplete(() =>
-        {
-            // Перемещение в локальных координатах
             Vector3 newLocalPosition = targetTransform.localPosition + localOffset;
-            targetTransform.DOLocalMove(newLocalPosition, shakeDuration)
-                .OnComplete(CompleteTheShake);
-        });
+        targetTransform.DOLocalMove(newLocalPosition, shakeDuration)
+            .OnComplete(() =>
+            {
+                targetTransform.DOShakePosition(shakeDuration, shakeStrength, shakeVibrato, shakeRandomness)
+                    .OnComplete(CompleteTheShake);
+            });
     }
 
 
@@ -42,3 +40,5 @@ public class ShakeTwinner : MonoBehaviour
         OnEndOfTheShake.Invoke();
     }
 }
+
+        
