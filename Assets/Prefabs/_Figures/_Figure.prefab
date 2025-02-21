@@ -420,7 +420,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4299757038794345960}
   m_Father: {fileID: 475767160583217366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6676424062802310778
@@ -440,6 +441,19 @@ MonoBehaviour:
   durationOfJump: 1
   forceOfJump: 1
   countOfJump: 1
+  OnEndOfTheJump:
+    _PersistentCalls:
+    - _Target: {fileID: 8747708930208740128}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!114 &8021534201270879282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,14 +468,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     _PersistentCalls:
+    - _Target: {fileID: 8747708930208740128}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
     - _Target: {fileID: 11400000, guid: d09fee74b3ccc2e408407e8db8755a2f, type: 2}
       _MemberName: get_Vector3
       _PersistentArguments: []
     - _Target: {fileID: 6676424062802310778}
-      _MemberName: LaunchTweener
+      _MemberName: LaunchTheTweener
       _PersistentArguments:
       - _Type: 15
-        _Int: 0
+        _Int: 1
         _String: 
         _X: 7
         _Y: 0
@@ -487,7 +512,7 @@ MonoBehaviour:
       _MemberName: set_value
       _PersistentArguments:
       - _Type: 15
-        _Int: 3
+        _Int: 4
         _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         _X: 0
@@ -599,15 +624,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStart:
     _PersistentCalls:
-    - _Target: {fileID: 4336084296723990799}
-      _MemberName: LaunchTweener
+    - _Target: {fileID: 1497912885031854436}
+      _MemberName: LaunchTheShakeAndChangeThePosition
       _PersistentArguments:
       - _Type: 7
         _Int: 0
         _String: 
-        _X: 90
-        _Y: 0
-        _Z: 45
+        _X: 0
+        _Y: 2
+        _Z: 0
         _W: 0
         _Object: {fileID: 0}
 --- !u!1 &4096668367550660799
@@ -5945,9 +5970,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5792806904347591671}
-  - component: {fileID: 4336084296723990799}
+  - component: {fileID: 1497912885031854436}
   m_Layer: 0
-  m_Name: RotationTwinner
+  m_Name: ShakeTwinner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5968,7 +5993,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2046475270268877273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4336084296723990799
+--- !u!114 &1497912885031854436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5977,35 +6002,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5201049275730046900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c48f664302c982e49b567683b72bcfbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2347520ad0fec444c86cc2d8f89f3034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransform: {fileID: 2367828275913025544}
-  curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  durationOfRotate: 2
+  targetTransform: {fileID: 6650791434395383032}
+  shakeDuration: 2
+  shakeStrength: 0.5
+  shakeVibrato: 10
+  shakeRandomness: 90
+  OnEndOfTheShake:
+    _PersistentCalls: []
 --- !u!1 &5897089731290160447
 GameObject:
   m_ObjectHideFlags: 0
@@ -6312,6 +6318,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 2
+--- !u!1 &8747708930208740128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4299757038794345960}
+  - component: {fileID: 3182455888011853778}
+  m_Layer: 0
+  m_Name: IsMoving
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4299757038794345960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747708930208740128}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7423545025629109176}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3182455888011853778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747708930208740128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd8c16e01b7f39459ed045bcb376e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WhenTurnedOn:
+    _PersistentCalls:
+    - _Target: {fileID: 7839656698745578304}
+      _MemberName: isActive=
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+  WhenTurnedOff:
+    _PersistentCalls:
+    - _Target: {fileID: 7839656698745578304}
+      _MemberName: isActive=
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &8909837607716775010
 GameObject:
   m_ObjectHideFlags: 0
@@ -6530,8 +6606,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8095392432583430807}
   - component: {fileID: 9166364630969903814}
+  - component: {fileID: 1269324409360723441}
   - component: {fileID: 7750316736179007619}
   - component: {fileID: 7783626854323309703}
+  - component: {fileID: 7839656698745578304}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -6574,8 +6652,35 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 0.5, y: 2, z: 0.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &1269324409360723441
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062896999122483629}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &7750316736179007619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6642,3 +6747,29 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 1190088049932598607}
+--- !u!114 &7839656698745578304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062896999122483629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8031264d951ad0443a0281e6a261abef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 1
+  OnEnter:
+    _PersistentCalls:
+    - _Target: {fileID: 4205105792442394338}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using DG.Tweening;
+using UltEvents;
 
 public class JumpTwinner : MonoBehaviour
 {
@@ -9,12 +10,20 @@ public class JumpTwinner : MonoBehaviour
     [SerializeField] private float durationOfJump = 1f;
     [SerializeField] private float forceOfJump = 1f;
     [SerializeField] private int countOfJump = 2;
+    [SerializeField] private UltEvent OnEndOfTheJump;
 
 
 
-    public void LaunchTweener(Vector3 finalPosition)
+    public void LaunchTheTweener(Vector3 finalPosition)
     {
         targetTransform.DOKill(true);
-        targetTransform.DOJump(finalPosition, forceOfJump, countOfJump, durationOfJump).SetEase(curve);
+        targetTransform.DOJump(finalPosition, forceOfJump, countOfJump, durationOfJump)
+            .SetEase(curve)
+            .OnComplete(CompleteTheTweener);
+    }
+
+    public void CompleteTheTweener()
+    {
+        OnEndOfTheJump.Invoke();
     }
 }
