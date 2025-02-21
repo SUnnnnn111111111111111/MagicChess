@@ -11,7 +11,7 @@ public class ValueStorage<Tipe> : MonoBehaviour
             // Debug.Log($"BeforeSet1. В хранилище находится {name} , старое значение :{_value}", gameObject);
             if(object.Equals(_value, value)) return;
 
-            if(_value == null && _value.Equals(null))
+            if(_value != null && !_value.Equals(null))
             {
                 // Debug.Log($"BeforeSet1. В хранилище находится {name} , старое значение :{_value}", gameObject);
                 BeforeSet.Invoke(_value);
@@ -20,7 +20,7 @@ public class ValueStorage<Tipe> : MonoBehaviour
 
             _value = value;
 
-            if(_value == null && _value.Equals(null))
+            if(_value != null && !_value.Equals(null))
             {
                 // Debug.Log($"AfterSet1. В хранилище находится {name} , старое значение :{_value}", gameObject);
                 AfterSet.Invoke(_value);

@@ -696,7 +696,7 @@ MonoBehaviour:
         _Object: {fileID: 0}
       - _Type: 2
         _Int: 0
-        _String: TurnOnTheTileOfNeighbours
+        _String: SendAMessageToTheNeighboringTilesToHighlight
         _X: 0
         _Y: 0
         _Z: 0
@@ -892,7 +892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358304240984645420}
-  - component: {fileID: 2156808564699596002}
+  - component: {fileID: 4019956655293102340}
   - component: {fileID: 5773517132793681259}
   m_Layer: 0
   m_Name: CurrentTileInstallerOnStartup
@@ -916,7 +916,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6650791434395383032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2156808564699596002
+--- !u!114 &4019956655293102340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -925,10 +925,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4421486916267579301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 934991fb16a15d14aa64f0d87db7b2f8, type: 3}
+  m_Script: {fileID: 11500000, guid: ca27b51ff9960e54c9305d7d61021dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnAwake:
+  OnStart:
     _PersistentCalls:
     - _Target: {fileID: 5773517132793681259}
       _MemberName: CastTheRay
@@ -6188,7 +6188,7 @@ MonoBehaviour:
         _Object: {fileID: 0}
       - _Type: 2
         _Int: 0
-        _String: TurnOffTheTileOfNeighbours
+        _String: SendAMessageToTheNeighboringTilesNotToHighlight
         _X: 0
         _Y: 0
         _Z: 0
@@ -6439,7 +6439,7 @@ MonoBehaviour:
       _MemberName: set_Int
       _PersistentArguments:
       - _Type: 3
-        _Int: 0
+        _Int: -1
         _String: 
         _X: 0
         _Y: 0

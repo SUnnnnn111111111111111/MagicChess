@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f368f7a7192ad4080d644bf179799f, type: 3}
   m_Name: SelectedTile
   m_EditorClassIdentifier: 
-  <GameObject>k__BackingField: {fileID: 0}
+  gameObject: {fileID: 0}
+  BeforeSet:
+    _PersistentCalls: []
+  AfterSet:
+    _PersistentCalls: []

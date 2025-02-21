@@ -2351,6 +2351,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4036052283863334856, guid: cb841acff60933247837f4177636e5ae, type: 3}
+      propertyPath: _value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5112008955768026334, guid: cb841acff60933247837f4177636e5ae, type: 3}
       propertyPath: m_Name
       value: _ChessField
