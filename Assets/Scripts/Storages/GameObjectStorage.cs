@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ObjectStorage : ValueStorage<GameObject>
+public class GameObjectStorage : ValueStorage<GameObject>
 {
 
 }

@@ -318,9 +318,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5692479353514241031}
-  - component: {fileID: 4063825935469026545}
+  - component: {fileID: 4241357640680164222}
   m_Layer: 0
-  m_Name: WhiteTeamAffiliation
+  m_Name: NumberOfTeam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -341,7 +341,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6650791434395383032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4063825935469026545
+--- !u!114 &4241357640680164222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,10 +350,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3509362240119481076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 604d3fd11efdd624cafe941d83953332, type: 3}
+  m_Script: {fileID: 11500000, guid: 6210a663fcea7794793d031d8e04aaed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <value>k__BackingField: 0
+  _value: 0
+  BeforeSet:
+    _PersistentCalls: []
+  AfterSet:
+    _PersistentCalls: []
 --- !u!1 &3584761412661703794
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,16 +656,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     _PersistentCalls:
-    - _Target: {fileID: 4063825935469026545}
+    - _Target: {fileID: 4241357640680164222}
       _MemberName: get_value
       _PersistentArguments: []
-    - _Target: {fileID: 11400000, guid: 77f9f63399e796346953879f9bbd84ff, type: 2}
-      _MemberName: set_Bool
+    - _Target: {fileID: 11400000, guid: 2ae87b141171e0440a068cf6aa44ebd7, type: 2}
+      _MemberName: set_Int
       _PersistentArguments:
       - _Type: 15
         _Int: 0
         _String: 
-        _X: 1
+        _X: 3
         _Y: 0
         _Z: 0
         _W: 0
@@ -888,7 +892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358304240984645420}
-  - component: {fileID: 4938369086548766559}
+  - component: {fileID: 2156808564699596002}
   - component: {fileID: 5773517132793681259}
   m_Layer: 0
   m_Name: CurrentTileInstallerOnStartup
@@ -912,7 +916,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6650791434395383032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4938369086548766559
+--- !u!114 &2156808564699596002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -921,10 +925,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4421486916267579301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca27b51ff9960e54c9305d7d61021dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 934991fb16a15d14aa64f0d87db7b2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnStart:
+  OnAwake:
     _PersistentCalls:
     - _Target: {fileID: 5773517132793681259}
       _MemberName: CastTheRay
@@ -6354,42 +6358,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6210a663fcea7794793d031d8e04aaed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <value>k__BackingField: 100
-  OnChangeTheInt:
-    _PersistentCalls:
-    - _Target: {fileID: 4901378216626830496}
-      _MemberName: set_fillAmount
-      _PersistentArguments:
-      - _Type: 5
-        _Int: 0
-        _String: 
-        _X: 0.5
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-    - _Target: {fileID: 6603920657651144021}
-      _MemberName: EqualityOfNumberToValue
-      _PersistentArguments:
-      - _Type: 3
-        _Int: 0
-        _String: 
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-    - _Target: {fileID: 4205105792442394338}
-      _MemberName: SetActive
-      _PersistentArguments:
-      - _Type: 15
-        _Int: 1
-        _String: 
-        _X: 1
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
+  _value: 0
+  BeforeSet:
+    _PersistentCalls: []
+  AfterSet:
+    _PersistentCalls: []
 --- !u!114 &9165536659254341453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6459,7 +6432,94 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40eb6051ea22b5840992a3f7671b0147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <value>k__BackingField: {fileID: 0}
+  _value: {fileID: 0}
+  BeforeSet:
+    _PersistentCalls:
+    - _Target: {fileID: 11400000, guid: ebb979acb6f87c84ea5662bf97afd124, type: 2}
+      _MemberName: set_Int
+      _PersistentArguments:
+      - _Type: 3
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 0}
+      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null.SendMessage
+      _PersistentArguments:
+      - _Type: 14
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: Perform
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: SetTheTeamNumberOfTheFigureAboveTheTile
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+  AfterSet:
+    _PersistentCalls:
+    - _Target: {fileID: 4241357640680164222}
+      _MemberName: get_value
+      _PersistentArguments: []
+    - _Target: {fileID: 11400000, guid: ebb979acb6f87c84ea5662bf97afd124, type: 2}
+      _MemberName: set_Int
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: 
+        _X: 3
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 0}
+      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null.SendMessage
+      _PersistentArguments:
+      - _Type: 14
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: Perform
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: SetTheTeamNumberOfTheFigureAboveTheTile
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &9062896999122483629
 GameObject:
   m_ObjectHideFlags: 0
