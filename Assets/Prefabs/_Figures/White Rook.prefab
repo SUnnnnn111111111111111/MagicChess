@@ -620,6 +620,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5788313464836946103, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: OnStart._PersistentCalls.Array.data[1]._PersistentArguments.Array.data[0]._X
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5788313464836946103, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: OnStart._PersistentCalls.Array.data[1]._PersistentArguments.Array.data[0]._Z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5897089731290160447, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Layer
       value: 7

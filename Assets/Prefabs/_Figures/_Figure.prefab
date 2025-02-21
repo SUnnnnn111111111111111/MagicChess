@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 3953001892755964979}
   - component: {fileID: 1215183055559791742}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Particle System0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +319,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2766515276811176342}
   serializedVersion: 8
-  lengthInSec: 0.5
+  lengthInSec: 0.1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -334,7 +334,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 2.5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -501,7 +501,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+      maxColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 0.78431374}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.37961707, b: 0, a: 1}
@@ -565,7 +565,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.35
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -889,7 +889,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: -1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -948,7 +948,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 1, z: 0}
+    m_Position: {x: 0, y: 0.5, z: 0}
     m_Rotation: {x: -90, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -1029,7 +1029,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.5
+      value: 1
       mode: 0
       spread: 0
       speed:
@@ -1258,7 +1258,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 30
+        scalar: 3
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -5477,7 +5477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2046475270268877273}
-  - component: {fileID: 4627481386833397815}
+  - component: {fileID: 5788313464836946103}
   m_Layer: 0
   m_Name: DeathEffect
   m_TagString: Untagged
@@ -5503,7 +5503,7 @@ Transform:
   - {fileID: 6708250341100209484}
   m_Father: {fileID: 1008009553583028196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4627481386833397815
+--- !u!114 &5788313464836946103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5525,7 +5525,7 @@ MonoBehaviour:
         _String: 
         _X: 45
         _Y: 0
-        _Z: 90
+        _Z: 75
         _W: 0
         _Object: {fileID: 0}
     - _Target: {fileID: 9135892954257476375}
@@ -5534,9 +5534,20 @@ MonoBehaviour:
       - _Type: 7
         _Int: 0
         _String: 
-        _X: -2
-        _Y: 0
+        _X: 1
+        _Y: 0.5
         _Z: 1
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 9062896999122483629}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
         _W: 0
         _Object: {fileID: 0}
 --- !u!1 &4096668367550660799
@@ -5823,7 +5834,7 @@ GameObject:
   - component: {fileID: 320530310935663503}
   - component: {fileID: 9135892954257476375}
   m_Layer: 0
-  m_Name: MoveTweener
+  m_Name: MoveTweener0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5861,7 +5872,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.25
       value: 0
       inSlope: 0
       outSlope: 0
@@ -11023,7 +11034,7 @@ GameObject:
   - component: {fileID: 6958887295023379746}
   - component: {fileID: 4116417904447779396}
   m_Layer: 0
-  m_Name: RotateTweeer
+  m_Name: RotateTweener0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
