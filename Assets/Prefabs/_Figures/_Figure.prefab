@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 3953001892755964979}
   - component: {fileID: 1215183055559791742}
   m_Layer: 0
-  m_Name: Particle System0
+  m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5594,9 +5594,9 @@ MonoBehaviour:
       - _Type: 7
         _Int: 0
         _String: 
-        _X: 45
+        _X: 270
         _Y: 0
-        _Z: 75
+        _Z: 45
         _W: 0
         _Object: {fileID: 0}
     - _Target: {fileID: 9135892954257476375}
@@ -5905,7 +5905,7 @@ GameObject:
   - component: {fileID: 320530310935663503}
   - component: {fileID: 9135892954257476375}
   m_Layer: 0
-  m_Name: MoveTweener0
+  m_Name: MoveTweener
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11105,7 +11105,7 @@ GameObject:
   - component: {fileID: 6958887295023379746}
   - component: {fileID: 4116417904447779396}
   m_Layer: 0
-  m_Name: RotateTweener0
+  m_Name: RotateTweener
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
