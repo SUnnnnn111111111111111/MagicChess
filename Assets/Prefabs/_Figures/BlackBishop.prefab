@@ -822,6 +822,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5373502197356055245, guid: 26912442172d8754ca26d3b31467fb91, type: 3}
+      propertyPath: _value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6974630293852028156, guid: 26912442172d8754ca26d3b31467fb91, type: 3}
       propertyPath: m_Name
       value: BlackBishop
