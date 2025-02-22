@@ -1944,8 +1944,9 @@ GameObject:
   - component: {fileID: 1038820248}
   - component: {fileID: 1038820247}
   - component: {fileID: 1038820246}
+  - component: {fileID: 1038820250}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2041,6 +2042,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1038820250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038820245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c590c49a11eaa24c8c90593d746ff42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 1
+  WhenClickOnAnObject:
+    _PersistentCalls:
+    - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
+      _MemberName: set_GameObject
+      _PersistentArguments:
+      - _Type: 13
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &1085134589 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7962329925891825798, guid: 596a9cd9fb996fb4fb0237f830a92b73, type: 3}
@@ -3625,8 +3653,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 832575519}
+  - {fileID: 1038820249}
   - {fileID: 1845865597}
   - {fileID: 1618895483}
   - {fileID: 780830755}
-  - {fileID: 1038820249}
   - {fileID: 2039557479}

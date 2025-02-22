@@ -389,14 +389,14 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2766515276811176342}
   serializedVersion: 8
-  lengthInSec: 0.1
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -404,7 +404,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 2.5
+    scalar: 1.75
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -1018,7 +1018,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0.5, z: 0}
+    m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -1328,7 +1328,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 90
+        scalar: 300
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -5786,7 +5786,7 @@ MonoBehaviour:
       - _Type: 5
         _Int: 0
         _String: 
-        _X: 3
+        _X: 2
         _Y: 0
         _Z: 0
         _W: 0
@@ -5963,7 +5963,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  durationOfMove: 2
+  durationOfMove: 1
   OnEndOfTheMove:
     _PersistentCalls: []
 --- !u!1 &4421486916267579301
@@ -11163,7 +11163,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  durationOfRotate: 2
+  durationOfRotate: 1
   OnEndOfTheRotate:
     _PersistentCalls: []
 --- !u!1 &6546635772046503710
