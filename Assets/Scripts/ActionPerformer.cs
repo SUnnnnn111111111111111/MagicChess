@@ -1,22 +1,36 @@
 using UnityEngine;
 using UltEvents;
-using UnityEngine.Assertions.Must;
 using System.Collections.Generic;
-using System.Linq;
 using System;
+using System.Linq;
 
 
 public class ActionPerformer : MonoBehaviour
 {
-    private Dictionary<string ,EventLauncher> actionPerformers;
+    private Dictionary<ActionSO, EventLauncher> actionPerformers;
 
     void Awake()
     {
-        actionPerformers = GetComponentsInChildren<EventLauncher>().ToDictionary(performer => performer.name);
+        actionPerformers = GetComponentsInChildren<ActionTarget>().ToDictionary(actionTarget => actionTarget.actionSO,
+            actionTarget => actionTarget.gameObject.GetComponent<EventLauncher>());
     }
 
-    public void Perform(string actionName)
+    public static void PerformAction(ActionPerformer aP, ActionSO aSO, int v)
     {       
-        actionPerformers[actionName].LaunchEvent();
+        aP.PerformAction(aSO, v);
+    }
+    
+    public static void PerformAction(ActionPerformer aP, ActionSO aSO, float v)
+    {       
+        aP.PerformAction(aSO, v);
+    }
+    
+    public static void PerformAction(ActionPerformer aP, ActionSO aSO)
+    {       
+        aP.PerformAction(aSO, new @void());
+    }
+    public void PerformAction<T>(ActionSO actionSO, T value)
+    {
+        (actionPerformers[actionSO] as EventLauncher<T>).LaunchEvent(value);
     }
 }

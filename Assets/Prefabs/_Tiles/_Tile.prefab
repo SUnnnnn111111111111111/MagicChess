@@ -92,6 +92,19 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+  Event:
+    _PersistentCalls:
+    - _Target: {fileID: 2917048945092951079}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &1912596896494218016
 GameObject:
   m_ObjectHideFlags: 0
@@ -5178,6 +5191,45 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+  Event:
+    _PersistentCalls:
+    - _Target: {fileID: 11400000, guid: 2ae87b141171e0440a068cf6aa44ebd7, type: 2}
+      _MemberName: get_Int
+      _PersistentArguments: []
+    - _Target: {fileID: 5041493424226268545}
+      _MemberName: EqualityOfNumberToValue
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: 
+        _X: 3
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 0}
+      _MemberName: UltEvents.Operators, Kybernetik.UltEvents, Version=3.0.5.0, Culture=neutral,
+        PublicKeyToken=null.Invert
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 1
+        _String: 
+        _X: 1
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 2917048945092951079}
+      _MemberName: SetActive
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 2
+        _String: 
+        _X: 1
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &2870922757068754571
 GameObject:
   m_ObjectHideFlags: 0
@@ -5445,6 +5497,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b22011bb21bcc4da6ba477d4afbbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Event:
+    _PersistentCalls:
+    - _Target: {fileID: 5383672724436587640}
+      _MemberName: get_GameObjects
+      _PersistentArguments: []
+    - _Target: {fileID: 8049370658758317088}
+      _MemberName: HandleTheList
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+          Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
   Event:
     _PersistentCalls:
     - _Target: {fileID: 5383672724436587640}
@@ -10491,6 +10561,7 @@ GameObject:
   - component: {fileID: 8945714341957554088}
   - component: {fileID: 2504572832005674421}
   - component: {fileID: 2406506642071079942}
+  - component: {fileID: 2611233424254223846}
   m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
@@ -10730,6 +10801,18 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+--- !u!114 &2611233424254223846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5047669706225289238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbaa32deb55d834aa27f41966a5ac29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5367546680512916812
 GameObject:
   m_ObjectHideFlags: 0
@@ -10803,7 +10886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6756175914955815459}
-  - component: {fileID: 9192479438333549086}
+  - component: {fileID: 7642679487223831601}
   m_Layer: 0
   m_Name: SetTheTeamNumberOfTheFigureAboveTheTile
   m_TagString: Untagged
@@ -10826,7 +10909,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6636819367407026947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9192479438333549086
+--- !u!114 &7642679487223831601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10835,25 +10918,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8185322887052419394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b22011bb21bcc4da6ba477d4afbbbe, type: 3}
+  m_Script: {fileID: 11500000, guid: 33fdc8b1f353f68439a8fd83e685303d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event:
-    _PersistentCalls:
-    - _Target: {fileID: 11400000, guid: ebb979acb6f87c84ea5662bf97afd124, type: 2}
-      _MemberName: get_Int
-      _PersistentArguments: []
-    - _Target: {fileID: 5041493424226268545}
-      _MemberName: set_value
-      _PersistentArguments:
-      - _Type: 15
-        _Int: 0
-        _String: 
-        _X: 3
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
+  actionSO: {fileID: 11400000, guid: 825670d0c06b686409f5a33af20fa8d2, type: 2}
 --- !u!1 &8480838236545431221
 GameObject:
   m_ObjectHideFlags: 0
@@ -15790,6 +15858,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b22011bb21bcc4da6ba477d4afbbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Event:
+    _PersistentCalls:
+    - _Target: {fileID: 5383672724436587640}
+      _MemberName: get_GameObjects
+      _PersistentArguments: []
+    - _Target: {fileID: 9211274718735991770}
+      _MemberName: HandleTheList
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+          Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
   Event:
     _PersistentCalls:
     - _Target: {fileID: 5383672724436587640}

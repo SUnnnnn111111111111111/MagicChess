@@ -1,16 +1,32 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UltEvents;
 
-public class EventLauncher : MonoBehaviour
+public class EventLauncher<T> : EventLauncher
 {
-    [SerializeField] private UltEvent Event;
+    [SerializeField] private UltEvent<T> Event;
+    private T delayValue;
 
-    public void LaunchEvent()
+    public void LaunchEvent(T value)
     {
-        Event.Invoke();
+        Event.Invoke(value);
     }
-    public void LaunchEvent(float delay)
+    public void LaunchEvent(T value, float delay)
     {
-        Invoke(nameof(LaunchEvent), delay);
+        delayValue = value;
+        Invoke(nameof(LaunchAfterDelay), delay);
     }
+
+    private void LaunchAfterDelay()
+    {
+        LaunchEvent(delayValue);
+    }
+    private void OnDisable()
+    {
+        CancelInvoke();
+    }
+}
+
+public abstract class EventLauncher : MonoBehaviour
+{
+    
 }

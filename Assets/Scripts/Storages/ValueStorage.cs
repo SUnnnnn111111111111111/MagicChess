@@ -1,9 +1,9 @@
 using UnityEngine;
 using UltEvents;
 
-public class ValueStorage<Tipe> : MonoBehaviour
+public class ValueStorage<T> : MonoBehaviour
 {
-    [field:SerializeField] public Tipe value 
+    [field:SerializeField] public T value 
     { 
         get => _value;
         set
@@ -29,7 +29,7 @@ public class ValueStorage<Tipe> : MonoBehaviour
         }
     }
 
-    [SerializeField] private Tipe _value;
-    [SerializeField] private UltEvent<Tipe> BeforeSet;
-    [SerializeField] private UltEvent<Tipe> AfterSet;
+    [SerializeField] private T _value;
+    [SerializeField] private UltEvent<T> BeforeSet;
+    [SerializeField] private UltEvent<T> AfterSet;
 }

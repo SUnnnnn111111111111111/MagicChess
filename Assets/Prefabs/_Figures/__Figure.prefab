@@ -21453,91 +21453,16 @@ MonoBehaviour:
   _value: {fileID: 0}
   BeforeSet:
     _PersistentCalls:
-    - _Target: {fileID: 11400000, guid: ebb979acb6f87c84ea5662bf97afd124, type: 2}
-      _MemberName: set_Int
-      _PersistentArguments:
-      - _Type: 3
-        _Int: -1
-        _String: 
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
     - _Target: {fileID: 0}
-      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null.SendMessage
-      _PersistentArguments:
-      - _Type: 14
-        _Int: 0
-        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: Perform
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: SetTheTeamNumberOfTheFigureAboveTheTile
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
+      _MemberName: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null.
+      _PersistentArguments: []
   AfterSet:
     _PersistentCalls:
-    - _Target: {fileID: 4241357640680164222}
-      _MemberName: get_value
-      _PersistentArguments: []
-    - _Target: {fileID: 11400000, guid: ebb979acb6f87c84ea5662bf97afd124, type: 2}
-      _MemberName: set_Int
-      _PersistentArguments:
-      - _Type: 15
-        _Int: 0
-        _String: 
-        _X: 3
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
     - _Target: {fileID: 0}
-      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null.SendMessage
-      _PersistentArguments:
-      - _Type: 14
-        _Int: 0
-        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: Perform
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: SetTheTeamNumberOfTheFigureAboveTheTile
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
+      _MemberName: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null.
+      _PersistentArguments: []
 --- !u!1 &9062896999122483629
 GameObject:
   m_ObjectHideFlags: 0
