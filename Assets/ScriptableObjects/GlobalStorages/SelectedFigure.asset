@@ -12,66 +12,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f368f7a7192ad4080d644bf179799f, type: 3}
   m_Name: SelectedFigure
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 0}
+  actionPerformer: {fileID: 0}
   BeforeSet:
     _PersistentCalls:
     - _Target: {fileID: 0}
-      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null.SendMessage
+      _MemberName: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null.PerformAction
       _PersistentArguments:
       - _Type: 14
         _Int: 0
-        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        _String: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 13
+        _Int: 0
+        _String: ScriptableObjectsScript.ActionVoidSO, Assembly-CSharp, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         _X: 0
         _Y: 0
         _Z: 0
         _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: Perform
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: TurnOffTheFigure
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
+        _Object: {fileID: 11400000, guid: 6753ad7b0aa1b604eb54fc47576bdef8, type: 2}
   AfterSet:
     _PersistentCalls:
     - _Target: {fileID: 0}
-      _MemberName: MessageSender, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null.SendMessage
+      _MemberName: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null.PerformAction
       _PersistentArguments:
       - _Type: 14
         _Int: 0
-        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+        _String: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 13
+        _Int: 0
+        _String: ScriptableObjectsScript.ActionVoidSO, Assembly-CSharp, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         _X: 0
         _Y: 0
         _Z: 0
         _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: Perform
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
-      - _Type: 2
-        _Int: 0
-        _String: TurnOnTheFigure
-        _X: 0
-        _Y: 0
-        _Z: 0
-        _W: 0
-        _Object: {fileID: 0}
+        _Object: {fileID: 11400000, guid: 861e799f8af698342b94dc2a98e04860, type: 2}

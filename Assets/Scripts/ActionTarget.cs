@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ScriptableObjectsScript;
 using UnityEngine;
 
 [RequireComponent(typeof(EventLauncher))]

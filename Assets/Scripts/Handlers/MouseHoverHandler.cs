@@ -3,19 +3,19 @@ using UltEvents;
 
 public class MouseHoverHandler : MonoBehaviour
 {
-    public bool isActive;
+    public bool isActive = true;
     [SerializeField] private UltEvent  OnMouseHover;
     [SerializeField] private UltEvent  OnRemovingMouseHover;
     
     
     void OnMouseEnter()
     {
-        if(isActive)
-        OnMouseHover.Invoke();
+        if (isActive)
+            OnMouseHover.Invoke();
     }
     void OnMouseExit()
     {
-        if(isActive)
-        OnRemovingMouseHover.Invoke();
+        if (isActive)
+            OnRemovingMouseHover.Invoke();
     }
 }

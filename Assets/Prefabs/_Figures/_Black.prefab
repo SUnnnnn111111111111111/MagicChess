@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 720889074142755747, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1121118888005850567, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -37,6 +41,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2963792957767453803, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344912306843763082, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -89,6 +97,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4530167454968493516, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677817302590681954, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -197,6 +209,39 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8020101969173102781, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021534201270879282, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: Event._PersistentCalls.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021534201270879282, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: Event._PersistentCalls.Array.data[7]._Target
+      value: 
+      objectReference: {fileID: 11400000, guid: c4aae202c18ce474783504c84adf2003, type: 2}
+    - target: {fileID: 8021534201270879282, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: Event._PersistentCalls.Array.data[7]._MemberName
+      value: Happen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021534201270879282, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: Event._PersistentCalls.Array.data[7]._PersistentArguments.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021534201270879282, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: Event._PersistentCalls.Array.data[5]._PersistentArguments.Array.data[0]._Int
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021534201270879282, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: Event._PersistentCalls.Array.data[5]._PersistentArguments.Array.data[0]._Type
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021534201270879282, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: Event._PersistentCalls.Array.data[5]._PersistentArguments.Array.data[0]._String
+      value: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468605046569607951, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}

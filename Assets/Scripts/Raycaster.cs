@@ -4,13 +4,13 @@ using UltEvents;
 public class Raycaster : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
-    [SerializeField] private UltEvent<GameObject>  WhenRayHit;
+    [SerializeField] private UltEvent<Collider>  WhenRayHit;
 
     public void CastTheRay(Vector3 vector)
     {
         if(Physics.Raycast(transform.position, vector, out RaycastHit raycastHitInfo, vector.magnitude, layerMask))
         {
-            WhenRayHit.Invoke(raycastHitInfo.transform.gameObject);
+            WhenRayHit.Invoke(raycastHitInfo.collider);
         }
     }
 }
