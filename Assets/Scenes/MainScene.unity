@@ -1197,7 +1197,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  durationOfRotate: 5
+  durationOfRotate: 2
   OnEndOfTheRotate:
     _PersistentCalls: []
 --- !u!4 &1325926287 stripped
