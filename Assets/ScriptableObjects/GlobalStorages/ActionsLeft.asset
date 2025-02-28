@@ -12,4 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e1920ce16185b4097f1923aebed0f9, type: 3}
   m_Name: ActionsLeft
   m_EditorClassIdentifier: 
-  <Int>k__BackingField: 0
+  valueInt: 2
+  BeforeSet:
+    _PersistentCalls: []
+  AfterSet:
+    _PersistentCalls:
+    - _Target: {fileID: 11400000}
+      _MemberName: EqualityOfNumberToValue
+      _PersistentArguments:
+      - _Type: 3
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 11400000, guid: 67e8a8e9568d84d4493bc76916455793, type: 2}
+      _MemberName: HappenIfTrue
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: 
+        _X: 1
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}

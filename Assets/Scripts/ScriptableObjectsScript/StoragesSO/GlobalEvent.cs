@@ -10,6 +10,11 @@ public class GlobalEvent : ScriptableObject
     private List<SubscriberOfGlobalEvent> subscribers = new List<SubscriberOfGlobalEvent>();
 
 
+    public void HappenIfTrue(bool value)
+    {
+        if (value) Happen();
+    }
+
     public void Happen()
     {
         foreach(var subscriber in subscribers)
