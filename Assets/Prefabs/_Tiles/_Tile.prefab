@@ -10129,13 +10129,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     _PersistentCalls:
-    - _Target: {fileID: 11400000, guid: 2ae87b141171e0440a068cf6aa44ebd7, type: 2}
-      _MemberName: get_Int
-      _PersistentArguments: []
     - _Target: {fileID: 5041493424226268545}
       _MemberName: EqualityOfNumberToValue
       _PersistentArguments:
-      - _Type: 15
+      - _Type: 14
         _Int: 0
         _String: 
         _X: 3
@@ -10148,7 +10145,7 @@ MonoBehaviour:
         PublicKeyToken=null.Invert
       _PersistentArguments:
       - _Type: 15
-        _Int: 1
+        _Int: 0
         _String: 
         _X: 1
         _Y: 0
@@ -10159,7 +10156,7 @@ MonoBehaviour:
       _MemberName: SetActive
       _PersistentArguments:
       - _Type: 15
-        _Int: 2
+        _Int: 1
         _String: 
         _X: 1
         _Y: 0
@@ -10220,7 +10217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7351588634104199024}
-  - component: {fileID: 4503792094431196152}
+  - component: {fileID: 905539541402007056}
   m_Layer: 6
   m_Name: IsHighlighted
   m_TagString: Untagged
@@ -10243,7 +10240,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6960350783815163844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4503792094431196152
+--- !u!114 &905539541402007056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

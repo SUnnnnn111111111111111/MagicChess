@@ -5949,7 +5949,7 @@ GameObject:
   - component: {fileID: 4019956655293102340}
   - component: {fileID: 5773517132793681259}
   m_Layer: 0
-  m_Name: CurrentTileInstallerOnStartup
+  m_Name: InstallerCurrentTileOnStartup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16862,7 +16862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c590c49a11eaa24c8c90593d746ff42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 1
+  isActive: 0
   WhenClickOnAnObject:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}

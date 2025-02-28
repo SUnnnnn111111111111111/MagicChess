@@ -453,12 +453,12 @@ MonoBehaviour:
   WhenTurnedOn:
     _PersistentCalls:
     - _Target: {fileID: 6471493502385467789}
-      _MemberName: LaunchEvent
+      _MemberName: Launch
       _PersistentArguments:
       - _Type: 5
         _Int: 0
         _String: 
-        _X: 3.5
+        _X: 2.5
         _Y: 0
         _Z: 0
         _W: 0
@@ -466,12 +466,12 @@ MonoBehaviour:
   WhenTurnedOff:
     _PersistentCalls:
     - _Target: {fileID: 9062565128381129887}
-      _MemberName: LaunchEvent
+      _MemberName: Launch
       _PersistentArguments:
       - _Type: 5
         _Int: 0
         _String: 
-        _X: 3
+        _X: 2.5
         _Y: 0
         _Z: 0
         _W: 0

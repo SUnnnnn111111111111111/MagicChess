@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0e1920ce16185b4097f1923aebed0f9, type: 3}
-  m_Name: TeamNumberOfTheSelectedFigure
+  m_Name: ActionsLeft
   m_EditorClassIdentifier: 
   <Int>k__BackingField: 0
