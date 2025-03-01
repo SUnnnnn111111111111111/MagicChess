@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e1920ce16185b4097f1923aebed0f9, type: 3}
   m_Name: PlayerNumber
   m_EditorClassIdentifier: 
-  <Int>k__BackingField: 0
+  valueInt: 0
+  BeforeSet:
+    _PersistentCalls: []
+  AfterSet:
+    _PersistentCalls: []

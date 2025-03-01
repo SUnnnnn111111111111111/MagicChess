@@ -5488,9 +5488,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 6650791434395383032}
   curve: 7
-  durationOfJump: 1
+  durationOfJump: 0.5
   forceOfJump: 1
-  countOfJump: 1
+  countOfJump: 2
   OnEndOfTheJump:
     _PersistentCalls:
     - _Target: {fileID: 8747708930208740128}

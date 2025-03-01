@@ -15,7 +15,8 @@ public class GlobalActionPerformerStorageSO : ScriptableObject
 
         set 
         {
-            if(actionPerformer == value) return;
+            if(actionPerformer == value)
+                value = null;
 
             if(actionPerformer) 
                 BeforeSet.Invoke(actionPerformer);
