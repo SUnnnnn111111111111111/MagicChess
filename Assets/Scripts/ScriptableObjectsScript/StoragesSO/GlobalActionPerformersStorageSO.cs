@@ -20,4 +20,6 @@ public class GlobalActionPerformersStorageSO : ScriptableObject
     {
         Objects.Remove(_object);
     }
+
+    public bool IsNotNull => Objects.Count != 0;
 }

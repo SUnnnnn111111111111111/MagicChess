@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec51ace9171a28943a169d4dd179833f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalEvent: {fileID: 11400000, guid: 67e8a8e9568d84d4493bc76916455793, type: 2}
+  globalEventSo: {fileID: 11400000, guid: 67e8a8e9568d84d4493bc76916455793, type: 2}
   OnEvent:
     _PersistentCalls:
     - _Target: {fileID: 8299628473460554214}
@@ -678,7 +678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5266404916498847699
 Transform:
   m_ObjectHideFlags: 0
@@ -714,7 +714,7 @@ MonoBehaviour:
       - _Type: 5
         _Int: 0
         _String: 
-        _X: 2.5
+        _X: 2
         _Y: 0
         _Z: 0
         _W: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
       - _Type: 5
         _Int: 0
         _String: 
-        _X: 2.5
+        _X: 1.5
         _Y: 0
         _Z: 0
         _W: 0
