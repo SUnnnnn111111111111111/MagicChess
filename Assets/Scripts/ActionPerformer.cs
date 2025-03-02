@@ -55,6 +55,6 @@ public class ActionPerformer : MonoBehaviour
     {
         EventLauncher<T> eventLauncherWithT = actionPerformers[actionSO] as EventLauncher<T>;
         Assert.IsNotNull(eventLauncherWithT, "The Action type does not match the EventLauncher type");
-        eventLauncherWithT.LaunchEvent(value);
+        eventLauncherWithT.Launch(value);
     }
 }

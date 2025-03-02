@@ -11304,7 +11304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec51ace9171a28943a169d4dd179833f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalEvent: {fileID: 11400000, guid: af06116666913e84295d9d2c47e8402d, type: 2}
+  globalEventSo: {fileID: 11400000, guid: dc7d04c5b07e773458d066e420f78cd6, type: 2}
   OnEvent:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 31ab271c2ef9cef40adf335070082181, type: 2}
@@ -16488,7 +16488,7 @@ GameObject:
   - component: {fileID: 4299757038794345960}
   - component: {fileID: 3182455888011853778}
   m_Layer: 0
-  m_Name: IsMoving
+  m_Name: StateOfMoving
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

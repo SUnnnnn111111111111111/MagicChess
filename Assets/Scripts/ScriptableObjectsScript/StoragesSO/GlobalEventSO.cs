@@ -4,23 +4,23 @@ using System;
 using UltEvents;
 
 
-[CreateAssetMenu(menuName = "Create GlobalEvent", fileName = "GlobalEvent", order = 0)]
-public class GlobalEvent : ScriptableObject
+[CreateAssetMenu(menuName = "Create GlobalEventSO", fileName = "GlobalEventSO", order = 0)]
+public class GlobalEventSO : ScriptableObject
 {
     private List<SubscriberOfGlobalEvent> subscribers = new List<SubscriberOfGlobalEvent>();
 
-
-    public void HappenIfTrue(bool value)
-    {
-        if (value) Happen();
-    }
-
+    
     public void Happen()
     {
         foreach(var subscriber in subscribers)
         {
             subscriber.React();
         }
+    }
+    
+    public void HappenIfTrue(bool value)
+    {
+        if (value) Happen();
     }
 
     public void Subscribe(SubscriberOfGlobalEvent subscriber)

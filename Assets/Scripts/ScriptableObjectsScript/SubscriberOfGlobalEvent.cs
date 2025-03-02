@@ -1,19 +1,20 @@
 using System;
 using UnityEngine;
 using UltEvents;
+using UnityEngine.Serialization;
 
 public class SubscriberOfGlobalEvent : MonoBehaviour
 {
-    [SerializeField] private GlobalEvent globalEvent;
+    [FormerlySerializedAs("globalEvent")] [SerializeField] private GlobalEventSO globalEventSo;
     [SerializeField] private UltEvent OnEvent;
     void OnEnable()
     {
-        globalEvent.Subscribe(this);
+        globalEventSo.Subscribe(this);
     }
 
     void OnDisable()
     {
-        globalEvent.UnSubscribe(this);
+        globalEventSo.UnSubscribe(this);
     }
 
     public void React()

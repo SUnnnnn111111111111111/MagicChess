@@ -6,11 +6,11 @@ public class EventLauncher<T> : EventLauncher
     [SerializeField] private UltEvent<T> Event;
     private T delayValue;
 
-    public void LaunchEvent(T value)
+    public void Launch(T value)
     {
         Event.Invoke(value);
     }
-    public void LaunchEvent(T value, float delay)
+    public void Launch(T value, float delay)
     {
         delayValue = value;
         Invoke(nameof(LaunchAfterDelay), delay);
@@ -18,8 +18,19 @@ public class EventLauncher<T> : EventLauncher
 
     private void LaunchAfterDelay()
     {
-        LaunchEvent(delayValue);
+        Launch(delayValue);
     }
+    
+    public void LaunchIfTrue(bool boolValue, T value)
+    {
+        if (boolValue) Launch(value);
+    }
+    
+    public void LaunchIfFalse(bool boolValue, T value)
+    {
+        if (!boolValue) Launch(value);
+    }
+    
     private void OnDisable()
     {
         CancelInvoke();

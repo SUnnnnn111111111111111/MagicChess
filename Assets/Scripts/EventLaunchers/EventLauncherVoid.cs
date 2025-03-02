@@ -6,12 +6,22 @@ public class EventLauncherVoid : EventLauncher<@void>
 {
     public void Launch()
     {
-        LaunchEvent(new @void());
+        Launch(new @void());
     }
 
     public void Launch(float delay)
     {
-        LaunchEvent(new @void(), delay);
+        Launch(new @void(), delay);
+    }
+    
+    public void LaunchIfTrue(bool boolValue)
+    {
+        if (boolValue) Launch();
+    }
+    
+    public void LaunchIfFalse(bool boolValue)
+    {
+        if (!boolValue) Launch();
     }
 }
 

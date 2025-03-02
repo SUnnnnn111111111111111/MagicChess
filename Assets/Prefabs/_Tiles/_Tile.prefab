@@ -10219,7 +10219,7 @@ GameObject:
   - component: {fileID: 7351588634104199024}
   - component: {fileID: 905539541402007056}
   m_Layer: 6
-  m_Name: IsHighlighted
+  m_Name: StateOfHighlighted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10238,7 +10238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6960350783815163844}
+  m_Father: {fileID: 2568523807464346402}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &905539541402007056
 MonoBehaviour:
@@ -10302,6 +10302,18 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+    - _Target: {fileID: 11400000, guid: dd667b9219780d740aaa0ecc34122920, type: 2}
+      _MemberName: AddObject
+      _PersistentArguments:
+      - _Type: 13
+        _Int: 0
+        _String: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 1512134191056675614}
   WhenTurnedOff:
     _PersistentCalls:
     - _Target: {fileID: 5367546680512916812}
@@ -10363,6 +10375,18 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+    - _Target: {fileID: 11400000, guid: dd667b9219780d740aaa0ecc34122920, type: 2}
+      _MemberName: RemoveObject
+      _PersistentArguments:
+      - _Type: 13
+        _Int: 0
+        _String: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 1512134191056675614}
 --- !u!1 &3104256407064190219
 GameObject:
   m_ObjectHideFlags: 0
@@ -10620,9 +10644,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7351588634104199024}
   - {fileID: 7436999227136656431}
   - {fileID: 7820042225916543108}
-  - {fileID: 6960350783815163844}
   m_Father: {fileID: 4394582298712778}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4181470215707004317
@@ -15903,38 +15927,6 @@ Transform:
   m_Children:
   - {fileID: 6012925953779303453}
   m_Father: {fileID: 8309906320706082368}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6871789949955596259
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6960350783815163844}
-  m_Layer: 6
-  m_Name: States
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6960350783815163844
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6871789949955596259}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7351588634104199024}
-  m_Father: {fileID: 2568523807464346402}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7762978993890458225
 GameObject:

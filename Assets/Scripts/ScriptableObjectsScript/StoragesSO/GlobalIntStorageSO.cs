@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 
 
 [CreateAssetMenu(fileName = "GlobalIntStorageSO", menuName = "GlobalStorageSO/GlobalIntStorageSO")]
-public class GlobalIntStorage : ScriptableObject
+public class GlobalIntStorageSO : ScriptableObject
 {
     [SerializeField] private int valueInt;
     [SerializeField] private UltEvent<int> BeforeSet;
