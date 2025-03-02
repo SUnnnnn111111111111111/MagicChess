@@ -84,6 +84,35 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 1efd225238c8e7248abc05196a5ca17c, type: 2}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._MemberName
+      value: AddObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.data[0]._Type
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.data[0]._Object
+      value: 
+      objectReference: {fileID: 5839672656674737452}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.data[0]._String
+      value: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
     - target: {fileID: 4267654177998170104, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -245,3 +274,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+--- !u!114 &5839672656674737452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3954298788306583747, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+  m_PrefabInstance: {fileID: 7488028895588732399}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbaa32deb55d834aa27f41966a5ac29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

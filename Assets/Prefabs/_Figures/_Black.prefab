@@ -84,6 +84,35 @@ PrefabInstance:
       propertyPath: _value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 3eb082c93de8b0d4385be3d59bd33e02, type: 2}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._MemberName
+      value: AddObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.data[0]._Type
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.data[0]._Object
+      value: 
+      objectReference: {fileID: 5093195447029498224}
+    - target: {fileID: 4241357640680164222, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+      propertyPath: AfterSet._PersistentCalls.Array.data[0]._PersistentArguments.Array.data[0]._String
+      value: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
     - target: {fileID: 4267654177998170104, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -241,3 +270,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+--- !u!114 &5093195447029498224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3954298788306583747, guid: 16af3f3cb24aef54f9eeca858fc0ff56, type: 3}
+  m_PrefabInstance: {fileID: 8092642569127788979}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbaa32deb55d834aa27f41966a5ac29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
