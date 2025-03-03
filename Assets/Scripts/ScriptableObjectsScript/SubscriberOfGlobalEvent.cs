@@ -5,16 +5,16 @@ using UnityEngine.Serialization;
 
 public class SubscriberOfGlobalEvent : MonoBehaviour
 {
-    [FormerlySerializedAs("globalEvent")] [SerializeField] private GlobalEventSO globalEventSo;
+    [SerializeField] private GlobalEvent globalEvent;
     [SerializeField] private UltEvent OnEvent;
     void OnEnable()
     {
-        globalEventSo.Subscribe(this);
+        globalEvent.Subscribe(this);
     }
 
     void OnDisable()
     {
-        globalEventSo.UnSubscribe(this);
+        globalEvent.UnSubscribe(this);
     }
 
     public void React()

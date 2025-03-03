@@ -266,7 +266,7 @@ MonoBehaviour:
   Event:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: ff74a9fa0d5837348959e4d0da596d1f, type: 2}
-      _MemberName: get_valueBool
+      _MemberName: get_Value
       _PersistentArguments: []
     - _Target: {fileID: 2038378676721260750}
       _MemberName: LaunchIfTrue
@@ -5589,7 +5589,7 @@ MonoBehaviour:
         _W: 0
         _Object: {fileID: 0}
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
-      _MemberName: set_GameObject
+      _MemberName: set_Value
       _PersistentArguments:
       - _Type: 13
         _Int: 0
@@ -11356,7 +11356,7 @@ MonoBehaviour:
   Event:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 82c9a1754ffc86d45877d1f5a9ad9eb1, type: 2}
-      _MemberName: get_valueBool
+      _MemberName: get_Value
       _PersistentArguments: []
     - _Target: {fileID: 5392116617941487924}
       _MemberName: LaunchIfTrue
@@ -11688,7 +11688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec51ace9171a28943a169d4dd179833f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalEventSo: {fileID: 11400000, guid: dc7d04c5b07e773458d066e420f78cd6, type: 2}
+  globalEvent: {fileID: 11400000, guid: dc7d04c5b07e773458d066e420f78cd6, type: 2}
   OnEvent:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 31ab271c2ef9cef40adf335070082181, type: 2}
@@ -17328,7 +17328,7 @@ MonoBehaviour:
   WhenClickOnAnObject:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
-      _MemberName: set_GameObject
+      _MemberName: set_Value
       _PersistentArguments:
       - _Type: 13
         _Int: 0

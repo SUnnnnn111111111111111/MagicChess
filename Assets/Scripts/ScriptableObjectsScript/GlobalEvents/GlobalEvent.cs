@@ -4,8 +4,8 @@ using System;
 using UltEvents;
 
 
-[CreateAssetMenu(menuName = "Create GlobalEventSO", fileName = "GlobalEventSO", order = 0)]
-public class GlobalEventSO : ScriptableObject
+[CreateAssetMenu(fileName = "GlobalEvent", menuName = "GlobalEvent/GlobalEvent")]
+public class GlobalEvent : ScriptableObject
 {
     private List<SubscriberOfGlobalEvent> subscribers = new List<SubscriberOfGlobalEvent>();
 

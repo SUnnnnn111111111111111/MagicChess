@@ -2022,7 +2022,7 @@ MonoBehaviour:
   Event:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
-      _MemberName: actionPerformer=
+      _MemberName: set_Value
       _PersistentArguments:
       - _Type: 13
         _Int: 0
@@ -2338,7 +2338,7 @@ MonoBehaviour:
       _MemberName: GetRandomObject
       _PersistentArguments: []
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
-      _MemberName: set_GameObject
+      _MemberName: set_Value
       _PersistentArguments:
       - _Type: 15
         _Int: 0
@@ -4403,7 +4403,7 @@ MonoBehaviour:
   Event:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 82c9a1754ffc86d45877d1f5a9ad9eb1, type: 2}
-      _MemberName: get_valueBool
+      _MemberName: get_Value
       _PersistentArguments: []
     - _Target: {fileID: 1064488156}
       _MemberName: SetActive
@@ -4926,7 +4926,7 @@ MonoBehaviour:
   Event:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: ff74a9fa0d5837348959e4d0da596d1f, type: 2}
-      _MemberName: get_valueBool
+      _MemberName: get_Value
       _PersistentArguments: []
     - _Target: {fileID: 1276304394}
       _MemberName: SetActive
@@ -4991,7 +4991,7 @@ MonoBehaviour:
       _MemberName: GetRandomObject
       _PersistentArguments: []
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
-      _MemberName: set_GameObject
+      _MemberName: set_Value
       _PersistentArguments:
       - _Type: 15
         _Int: 0

@@ -15837,7 +15837,7 @@ MonoBehaviour:
   WhenClickOnAnObject:
     _PersistentCalls:
     - _Target: {fileID: 11400000, guid: 5288bccfb4225e543bd974cc3ca768c7, type: 2}
-      _MemberName: get_GameObject
+      _MemberName: get_Value
       _PersistentArguments: []
     - _Target: {fileID: 0}
       _MemberName: ActionPerformer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,

@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54654cf7f29820746aadbf0d865f0d63, type: 3}
   m_Name: EnemyWhiteExists
   m_EditorClassIdentifier: 
-  <valueBool>k__BackingField: 0
+  _Value: 0
+  BeforeSet:
+    _PersistentCalls: []
+  AfterSet:
+    _PersistentCalls: []
